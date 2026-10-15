@@ -79,6 +79,14 @@ phony {
     }),
 }
 
+// Deprecated FCM 5 is selected explicitly by the two legacy products only.
+vintf_compatibility_matrix {
+    name: "framework_compatibility_matrix.5.xml",
+    stem: "compatibility_matrix.5.xml",
+    srcs: ["compatibility_matrix.5.xml"],
+    kernel_configs: ["kernel_config_r_5.4"],
+}
+
 ////////////////////////////////////////////
 // AUTO GENERATED MODULES
 // DO NOT ADD MORE MODULES BELOW THIS LINE

@@ -31,12 +31,14 @@ cc_library_static {
         "libgralloctypes",
         "libhardware",
         "libcamera_metadata",
-        "libexif",
         "libui",
+        "android.hardware.graphics.mapper@2.0",
+        "android.hardware.graphics.mapper@3.0",
+        "android.hardware.graphics.mapper@4.0",
+        "libexif",
     ],
     include_dirs: ["system/media/private/camera/include"],
     export_include_dirs: ["include"],
-    export_shared_lib_headers: ["libui"],
 }
 
 // NOTE: Deprecated module kept for compatibility reasons.
